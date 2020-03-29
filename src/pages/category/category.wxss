@@ -1,0 +1,67 @@
+.category{
+  display: flex;
+  position: absolute;
+  top: 136rpx;
+  bottom: 0rpx;
+  left: 10rpx;
+  right: 0rpx;
+}
+.category-left{
+  width: 180rpx;
+  background-color: #fff;
+}
+.category-left-item{
+  line-height: 80rpx;
+  text-align: center;
+  border-bottom: 1rpx solid gray;
+}
+.category-left-item.active{
+  background-color: rgb(238, 227, 231);
+}
+
+.category-right{
+  /* 左边分配好，右边直接占满 */
+  flex: 1;
+  padding: 20rpx;
+  background-color: rgb(238, 227, 231);
+}
+/* <!-- 上面轮播部分 --> */
+/* swiper 默认高是150px */
+.category-right-slider{
+  height: 278rpx;
+}
+.category-right-slider image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+/* 下面二级分类列表 */
+.category-right-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.category-list-item{
+  width: 33.33%;
+  padding: 20rpx;
+  text-align: center;
+  /* 盒子模型=内减模式=内容+padding+border */
+  box-sizing: border-box; 
+  border-right: 1rpx solid gray;
+  border-bottom: 1rpx solid gray;
+}
+.category-list-item:nth-child(3){
+  border-right: none;
+}
+.category-list-item:nth-child(4){
+  border-bottom: none;
+}
+.category-list-item:nth-child(5){
+  border-bottom: none;
+}
+.category-list-item image{
+  width: 150rpx;
+  height: 150rpx;
+}
+

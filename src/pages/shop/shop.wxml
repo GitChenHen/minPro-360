@@ -1,0 +1,21 @@
+<!-- 头部结构 -->
+<view class='header'>
+<image src='//p2.ssl.qhmsg.com/t01ecc3b6b24e7bdbd8.png'></image>
+<text class='header-title'>商城</text>
+</view>
+<!-- 搜索结构 -->
+<view class='search'>
+<image src="../../assets/tabs/search.png" />
+<input type='text' placeholder='请输入商品名称' bindtap='onClickSearch'></input>
+<button class="btn" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap">
+    登录
+</button>
+</view>
+<!-- 轮播图结构 -->
+<view class="lunbo">
+    <swiper indicator-dots="{{true}}" circular="{{true}}" interval="1000" indicator-color="rgba(0, 0, 0, .3)" autoplay="{{true}}">
+        <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}">
+            <image src="{{item.imgUrl}}" />
+        </swiper-item>
+    </swiper>
+</view>

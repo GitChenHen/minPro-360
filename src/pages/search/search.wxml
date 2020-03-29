@@ -1,0 +1,14 @@
+<!-- 头部结构 -->
+<view class='header'>
+<image src='//p2.ssl.qhmsg.com/t01ecc3b6b24e7bdbd8.png'></image>
+<text class='header-title'>商城</text>
+</view>
+<!-- 搜索结构 -->
+<view class='search'>
+<button bindtap='onClickBack'>《</button>
+<image src="../../assets/tabs/search.png" />
+<input type='text' placeholder='请输入商品名称' bindtap='onClickSearch'></input>
+<button class="btn" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap">
+    搜索
+</button>
+</view>

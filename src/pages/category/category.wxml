@@ -1,0 +1,35 @@
+<!-- 头部结构 -->
+<view class='header'>
+  <image src='//p2.ssl.qhmsg.com/t01ecc3b6b24e7bdbd8.png'></image>
+  <text class='header-title'>分类</text>
+</view>
+<!-- 分类内容结构 -->
+<view class='category'>
+  <!-- 分类左边 -->
+  <view class='category-left'>
+    <block wx:for="{{category}}" wx:key="{{index}}">
+      <!-- data-index触发时索引传递给事件方法onClickChangeListItem的index -->
+      <view bindtap='onClickChangeListItem' data-index='{{index}}' class="category-left-item {{index == activeIndex ? 'active' : ''}}">{{item.name}}</view>
+    </block>
+  </view>
+  <!-- 分类右边 -->
+  <view class='category-right'>   
+  <!-- 上面轮播部分 -->
+      <swiper class='category-right-slider' indicator-dots='true'>
+       <block wx:for="{{ spread }}" wx:key="{{index}}" >
+        <swiper-item>
+          <image mode='widthFix' src='{{item.pic}}' bindtap='onChangeListData'></image>
+        </swiper-item>
+         </block>
+      </swiper> 
+      <!-- 下面二级分类列表 -->  
+      <view class='category-right-list'>
+      <block wx:for="{{secondary}}" wx:key="{{index}}">
+      <view class='category-list-item'>
+      <image src='{{item.pic}}' bindtap='onChangeListData'></image>
+      <view>{{item.name}}</view>
+      </view>
+      </block>
+      </view>
+  </view>
+</view>

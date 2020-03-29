@@ -1,0 +1,53 @@
+<!-- 头部结构 -->
+<view class='header'>
+<image src='//p2.ssl.qhmsg.com/t01ecc3b6b24e7bdbd8.png'></image>
+<text class='header-title'>首页</text>
+</view>
+<!-- 轮播结构 -->
+<view class='lunbo'>
+<swiper indicator-dots="{{true}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperList}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item.imgUrl}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- 入口结构 -->
+<view class="entry">
+  <view class="entry-item" wx:for="{{entryList}}" wx:key="{{index}}">
+    <image src="{{item.imgUrl}}" />
+    <view class="entry-item-title">{{item.text}}</view>
+    </view>
+</view>
+<!-- 手机软件 -->
+<view class="software">
+<view class="software-title">手机软件</view> 
+<view class="software-list">
+<view class="software-item" wx:for="{{softwareList}}" wx:key="{{index}}">
+<image src="{{item.imgUrl}}" />
+<view class="item-title">{{item.title}}</view>
+<view class="item-number">{{item.number}}</view>
+<view class="item-download">{{item.download}}</view>
+</view>
+</view>
+<view class="software-bottom">
+<view class="software-bottom-item" wx:for="{{softwarebottomList}}" wx:key="{{index}}">
+<image src="{{item.imgUrl}}" />
+<text>{{item.title}}</text>
+</view>
+</view>
+</view>
+<!-- 智能硬件 -->
+<view class="hardware">
+  <view class="hardware-title">智能硬件</view>
+  <view class="hardware-list">
+    <view class="hardware-item" wx:for="{{hardwareList}}" wx:key="{{index}}">
+      <view class="item-title">{{item.title}}</view>
+      <view class="item-info">{{item.info}}</view>
+      <view class="item-price">{{item.price}}</view>
+      <image src="{{item.imgUrl}}" />
+    </view>
+  </view>
+</view>

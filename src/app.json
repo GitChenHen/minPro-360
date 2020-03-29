@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/shop/shop",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/assets/tabs/home.png",
+      "selectedIconPath": "/assets/tabs/home-active.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "分类",
+      "iconPath": "/assets/tabs/fenlei.png",
+      "selectedIconPath": "/assets/tabs/fenlei-active.png"
+    },
+    {
+      "pagePath": "pages/shop/shop",
+      "text": "商城",
+      "iconPath": "/assets/tabs/message.png",
+      "selectedIconPath": "/assets/tabs/message-active.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/assets/tabs/profile.png",
+      "selectedIconPath": "/assets/tabs/profile-active.png"
+    }
+    ]
+  }
+}

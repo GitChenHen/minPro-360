@@ -1,0 +1,117 @@
+
+/* 轮播样式 */
+.lunbo{
+  width: 750rpx;
+  height: 340rpx;
+}
+.lunbo image{
+  width: 100%;
+  height: 100%;
+}
+/* 入口样式 */
+.entry{
+  display: flex;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid rgb(238, 235, 235);
+}
+.entry .entry-item{
+  flex: 1;
+  border-right: 1rpx solid rgb(235, 234, 234);
+  text-align: center;
+}
+.entry .entry-item image{
+  width: 110rpx;
+  height: 100rpx;
+  margin-left: 25rpx;
+}
+/* 手机软件 */
+.software{
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #e7d5d5;
+}
+.software-title{
+  font-size: 50rpx;
+  margin: 30rpx 0 20rpx 30rpx;
+}
+.software-list{
+  /* flex伸缩盒子 */
+  display: flex;
+  /* 自动换行 */
+  flex-wrap: wrap;
+  
+}
+.software-item{
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.software-item image{
+  width: 96rpx;
+  height: 96rpx;
+}
+.item-title,.item-number{
+  margin-bottom: 5rpx;
+}
+.item-download{
+  width: 120rpx;
+  height: 45rpx;
+  margin: 10rpx 0 0 40rpx;
+  background-color: aquamarine;
+  border-radius: 20rpx;
+}
+/* 手机软件 下面的软件信息列表*/
+.software-bottom{
+  margin-top: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.software-bottom-item{
+ width: 24%; 
+ height: 80rpx;
+ text-align: center;
+ margin: 0 0 10rpx 4rpx;
+ background-color: rgb(226, 218, 207);
+ border: 1rpx solid gray;
+ /* 设置图片文字左右居中对齐 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.software-bottom-item image{
+  width: 40rpx;
+  height: 40rpx;
+}
+/* 智能硬件样式 */
+.hardware-title{
+  font-size: 50rpx;
+  margin: 30rpx 0 20rpx 30rpx;
+}
+.hardware-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hardware-item{
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 20rpx;
+  border-right: 1rpx solid #e7dddd;
+  border-bottom: 1rpx solid #e7dddd;
+}
+.hardware-item image{
+  width: 180rpx;
+  height: 120rpx;
+}
+.hardware-item .item-title{
+  font-size: 35rpx;
+}
+.hardware-item .item-info{
+  color:hsl(0, 17%, 75%);
+}
+.hardware-item .item-price{
+  color:red;
+}
